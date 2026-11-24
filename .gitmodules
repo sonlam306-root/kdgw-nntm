@@ -1,0 +1,3 @@
+[submodule "kdgw-hardware"]
+	path = kdgw-hardware
+	url = ../kdgw-hardware.git

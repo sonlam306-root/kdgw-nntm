@@ -1,0 +1,300 @@
+{
+ "project": "nntm",
+ "name": "Nông nghiệp thông minh vì tương lai xanh",
+ "hardware": "KD-GW-HW-v1.2",
+ "status": "đã duyệt",
+ "dashboard_name": "NNTM Dashboard (đặt tên sau)",
+ "relay_modules": 1,
+ "lid": [
+  "Trường THCS Kim Đồng",
+  "Nông nghiệp thông minh"
+ ],
+ "relay_lid": [
+  "RELAY",
+  "TẢI 12V"
+ ],
+ "zones": {
+  "TT": "Trồng trọt",
+  "CN": "Chăn nuôi",
+  "TS": "Thủy sản",
+  "NL": "Trạm năng lượng",
+  "DK": "Trạm điều khiển"
+ },
+ "network": {
+  "LAN": "Switch/router → Raspberry Pi 5 (edge, chạy dashboard + màn hình 7\" ở trạm điều khiển) → VPS",
+  "camera": "Camera đếm gà (ESP32-CAM hoặc webcam USB trên Pi 5) – luồng RTSP thẳng lên Pi 5, không qua gateway",
+  "power": "Pin mặt trời 12V 30W → bộ sạc 10A → ắc quy 12V 7Ah → cầu chì → jack 12V gateway + nguồn 12V cho tải qua relay"
+ },
+ "ports": [
+  {
+   "port": "AI1",
+   "zone": "TT",
+   "label": "ẨM ĐẤT",
+   "device": "Cảm biến độ ẩm đất điện dung v1.2",
+   "power": "3V3",
+   "unit": "%",
+   "note": "Cắm vào giá thể luống tưới"
+  },
+  {
+   "port": "AI2",
+   "zone": "TT",
+   "label": "TDS",
+   "device": "DFRobot Gravity TDS (dinh dưỡng thủy canh)",
+   "power": "3V3",
+   "unit": "ppm",
+   "note": "Đầu dò trong bể dung dịch thủy canh"
+  },
+  {
+   "port": "AI3",
+   "zone": "TS",
+   "label": "pH",
+   "device": "DFRobot Gravity pH V2",
+   "power": "3V3",
+   "unit": "pH",
+   "note": "Hiệu chuẩn pH 4.0 / 7.0"
+  },
+  {
+   "port": "AI4",
+   "zone": "TS",
+   "label": "DO",
+   "device": "DFRobot Gravity DO (oxy hòa tan) – tuỳ chọn",
+   "power": "3V3",
+   "unit": "mg/L",
+   "note": "Giá cao; có thể lắp sau"
+  },
+  {
+   "port": "AI5",
+   "zone": "CN",
+   "label": "KHÍ",
+   "device": "MQ-135 (khí NH3/khí độc chuồng)",
+   "power": "5V (rail) + chia áp 10k/20k",
+   "unit": "ppm*",
+   "note": "Lấy 5V từ cổng 3V3/5V/G; ngõ ra qua cầu chia áp"
+  },
+  {
+   "port": "AI6",
+   "zone": "",
+   "label": "DP",
+   "device": "Trống",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "OW",
+   "zone": "TS",
+   "label": "T°NƯỚC",
+   "device": "DS18B20 chống nước ×2 (bể cá, bể thủy canh)",
+   "power": "3V3",
+   "unit": "°C",
+   "note": "2 cảm biến chung 1 dây"
+  },
+  {
+   "port": "LOAD",
+   "zone": "CN",
+   "label": "CÂN",
+   "device": "Load cell 1 kg dưới máng ăn",
+   "power": "E+ 4.3V",
+   "unit": "g",
+   "note": "Biết lượng thức ăn còn lại"
+  },
+  {
+   "port": "DI1",
+   "zone": "DK",
+   "label": "1",
+   "device": "Nút TRỒNG TRỌT",
+   "power": "",
+   "unit": "",
+   "note": "Nút nhấn tiếp điểm khô"
+  },
+  {
+   "port": "DI2",
+   "zone": "DK",
+   "label": "2",
+   "device": "Nút CHĂN NUÔI",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "DI3",
+   "zone": "DK",
+   "label": "3",
+   "device": "Nút THỦY SẢN",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "DI4",
+   "zone": "DK",
+   "label": "4",
+   "device": "Nút TẮT/BẬT TỔNG",
+   "power": "",
+   "unit": "",
+   "note": "Nút nấm có khoá"
+  },
+  {
+   "port": "DI5",
+   "zone": "TS",
+   "label": "5",
+   "device": "Phao mực nước bể cá – THẤP",
+   "power": "",
+   "unit": "",
+   "note": "Phao từ tiếp điểm khô"
+  },
+  {
+   "port": "DI6",
+   "zone": "TS",
+   "label": "6",
+   "device": "Phao mực nước bể cá – CAO",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "DI7",
+   "zone": "TT",
+   "label": "7",
+   "device": "Phao bể dung dịch thủy canh – THẤP",
+   "power": "",
+   "unit": "",
+   "note": "Chống bơm chạy khô"
+  },
+  {
+   "port": "DI8",
+   "zone": "CN",
+   "label": "8",
+   "device": "Phao máng uống gà",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "DI-F",
+   "zone": "TT",
+   "label": "L.LƯỢNG",
+   "device": "Cảm biến lưu lượng YF-S201 (đường tưới)",
+   "power": "5V (rail)",
+   "unit": "L",
+   "note": "Đo nước tưới tiêu thụ"
+  },
+  {
+   "port": "RS485",
+   "zone": "",
+   "label": "DỰ PHÒNG",
+   "device": "Dự phòng: cảm biến đất NPK Modbus",
+   "power": "",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "PWR1",
+   "zone": "CN",
+   "label": "QUẠT",
+   "device": "Quạt thông gió 12V (chỉnh tốc độ theo nhiệt độ)",
+   "power": "12V PWM",
+   "unit": "%",
+   "note": ""
+  },
+  {
+   "port": "PWR2",
+   "zone": "TT",
+   "label": "LED",
+   "device": "LED dây trồng cây 12V (chỉnh độ sáng)",
+   "power": "12V PWM",
+   "unit": "%",
+   "note": ""
+  },
+  {
+   "port": "SERVO",
+   "zone": "CN",
+   "label": "MÁNG ĂN",
+   "device": "Servo MG90S mở cửa máng ăn",
+   "power": "5V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "I2C",
+   "zone": "",
+   "label": "I2C",
+   "device": "Hub I2C 4 cổng: SHT31 nhà kính (0x44), SHT31 chuồng gà (0x45), BH1750 ánh sáng (0x23), INA226 trạm năng lượng (0x40)",
+   "power": "3V3",
+   "unit": "",
+   "note": "Dây I2C ≤ 1.5 m"
+  },
+  {
+   "port": "RLY1",
+   "zone": "TT",
+   "label": "BƠM TƯỚI",
+   "device": "Bơm tưới nhỏ giọt 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY2",
+   "zone": "TT",
+   "label": "BƠM THỦY CANH",
+   "device": "Bơm tuần hoàn thủy canh 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY3",
+   "zone": "TS",
+   "label": "BƠM LỌC",
+   "device": "Bơm lọc / tuần hoàn bể cá 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY4",
+   "zone": "TS",
+   "label": "SỤC KHÍ",
+   "device": "Máy sục khí 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY5",
+   "zone": "CN",
+   "label": "NƯỚC UỐNG",
+   "device": "Van điện từ / bơm mini cấp máng uống 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY6",
+   "zone": "CN",
+   "label": "ĐÈN SƯỞI",
+   "device": "Đèn sưởi chuồng gà 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY7",
+   "zone": "DK",
+   "label": "ĐÈN BÁO",
+   "device": "Đèn xoay cảnh báo 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  },
+  {
+   "port": "RLY8",
+   "zone": "DK",
+   "label": "CÒI HÚ",
+   "device": "Còi hú 12V",
+   "power": "12V",
+   "unit": "",
+   "note": ""
+  }
+ ]
+}

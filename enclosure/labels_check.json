@@ -1,0 +1,182 @@
+[
+ {
+  "vach": "F",
+  "nhan": "ẨM ĐẤT",
+  "co_chu": 1.5,
+  "rong_mm": 8.9
+ },
+ {
+  "vach": "F",
+  "nhan": "TDS",
+  "co_chu": 2.0,
+  "rong_mm": 6.0
+ },
+ {
+  "vach": "F",
+  "nhan": "pH",
+  "co_chu": 2.0,
+  "rong_mm": 4.2
+ },
+ {
+  "vach": "F",
+  "nhan": "DO",
+  "co_chu": 2.0,
+  "rong_mm": 4.5
+ },
+ {
+  "vach": "F",
+  "nhan": "KHÍ",
+  "co_chu": 2.0,
+  "rong_mm": 5.3
+ },
+ {
+  "vach": "F",
+  "nhan": "DP",
+  "co_chu": 2.0,
+  "rong_mm": 4.2
+ },
+ {
+  "vach": "F",
+  "nhan": "T°NƯỚC",
+  "co_chu": 1.5,
+  "rong_mm": 9.0
+ },
+ {
+  "vach": "F",
+  "nhan": "CÂN",
+  "co_chu": 2.0,
+  "rong_mm": 6.3
+ },
+ {
+  "vach": "L",
+  "nhan": "1",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "2",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "3",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "4",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "G",
+  "co_chu": 2.4,
+  "rong_mm": 2.6
+ },
+ {
+  "vach": "L",
+  "nhan": "5",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "6",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "7",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "8",
+  "co_chu": 2.4,
+  "rong_mm": 2.2
+ },
+ {
+  "vach": "L",
+  "nhan": "G",
+  "co_chu": 2.4,
+  "rong_mm": 2.6
+ },
+ {
+  "vach": "L",
+  "nhan": "3V3 5V G",
+  "co_chu": 1.4,
+  "rong_mm": 9.7
+ },
+ {
+  "vach": "L",
+  "nhan": "L.LƯỢNG",
+  "co_chu": 1.4,
+  "rong_mm": 9.4
+ },
+ {
+  "vach": "L",
+  "nhan": "485",
+  "co_chu": 1.7,
+  "rong_mm": 4.8
+ },
+ {
+  "vach": "B",
+  "nhan": "QUẠT",
+  "co_chu": 1.5,
+  "rong_mm": 6.3
+ },
+ {
+  "vach": "B",
+  "nhan": "LED",
+  "co_chu": 2.0,
+  "rong_mm": 5.8
+ },
+ {
+  "vach": "B",
+  "nhan": "MÁNG ĂN",
+  "co_chu": 1.5,
+  "rong_mm": 10.8
+ },
+ {
+  "vach": "B",
+  "nhan": "I2C",
+  "co_chu": 2.4,
+  "rong_mm": 5.8
+ },
+ {
+  "vach": "B",
+  "nhan": "12V",
+  "co_chu": 2.4,
+  "rong_mm": 7.0
+ },
+ {
+  "vach": "L",
+  "nhan": "DI",
+  "co_chu": 2.6,
+  "rong_mm": 4.2
+ },
+ {
+  "vach": "B",
+  "nhan": "USB",
+  "co_chu": 2.4,
+  "rong_mm": 7.4
+ },
+ {
+  "vach": "B",
+  "nhan": "LAN",
+  "co_chu": 2.4,
+  "rong_mm": 7.2
+ },
+ {
+  "vach": "B",
+  "nhan": "FUSE 5A",
+  "co_chu": 2.0,
+  "rong_mm": 12.7
+ }
+]
