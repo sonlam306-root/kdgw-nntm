@@ -1,26 +1,26 @@
 {
  "nap_loi": [
   [
-   "Trường THCS Kim Đồng",
-   5.0,
-   4.17
+   "Nông Nghiệp Thông Minh",
+   4.5,
+   7.88
   ],
   [
-   "Nông nghiệp thông minh",
-   4.6,
-   -4.38
+   "Kim Đồng",
+   9.0,
+   -5.62
   ]
  ],
  "nap_relay": [
   [
-   "RELAY",
-   6.0,
-   4.75
+   "Hộp điều khiển",
+   5.0,
+   7.44
   ],
   [
-   "TẢI 12V",
-   5.0,
-   -5.25
+   "Kim Đồng",
+   8.5,
+   -5.69
   ]
  ],
  "ten_relay": [

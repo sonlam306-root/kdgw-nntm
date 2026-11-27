@@ -69,7 +69,7 @@ relay_com_x = [
   65.88
 ];
 // --- chữ nổi: make_project.py ghi đè theo profile ---
-lid_texts = [["Trường THCS Kim Đồng", 5.0, 4.17], ["Nông nghiệp thông minh", 4.6, -4.38]];
-relay_lid_texts = [["RELAY", 6.0, 4.75], ["TẢI 12V", 5.0, -5.25]];
+lid_texts = [["Nông Nghiệp Thông Minh", 4.5, 7.88], ["Kim Đồng", 9.0, -5.62]];
+relay_lid_texts = [["Hộp điều khiển", 5.0, 7.44], ["Kim Đồng", 8.5, -5.69]];
 n_relay_mod = 1;
 relay_labels = [[0, 0, "1", ["BƠM", "TƯỚI"], 2.6], [0, 1, "2", ["BƠM", "THỦY", "CANH"], 2.6], [0, 2, "3", ["BƠM", "LỌC"], 2.6], [0, 3, "4", ["SỤC", "KHÍ"], 2.6], [0, 4, "5", ["NƯỚC", "UỐNG"], 2.6], [0, 5, "6", ["ĐÈN", "SƯỞI"], 2.6], [0, 6, "7", ["ĐÈN", "BÁO"], 2.6], [0, 7, "8", ["CÒI HÚ"], 2.6]];

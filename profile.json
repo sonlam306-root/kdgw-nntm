@@ -1,18 +1,26 @@
 {
  "project": "nntm",
  "name": "Nông nghiệp thông minh vì tương lai xanh",
+ "lid": [
+  "Nông Nghiệp Thông Minh",
+  "Kim Đồng"
+ ],
+ "lid_sizes": [
+  5.0,
+  9.0
+ ],
+ "relay_lid": [
+  "Hộp điều khiển",
+  "Kim Đồng"
+ ],
+ "relay_lid_sizes": [
+  5.0,
+  8.5
+ ],
  "hardware": "KD-GW-HW-v1.2",
  "status": "đã duyệt",
  "dashboard_name": "NNTM Dashboard (đặt tên sau)",
  "relay_modules": 1,
- "lid": [
-  "Trường THCS Kim Đồng",
-  "Nông nghiệp thông minh"
- ],
- "relay_lid": [
-  "RELAY",
-  "TẢI 12V"
- ],
  "zones": {
   "TT": "Trồng trọt",
   "CN": "Chăn nuôi",
